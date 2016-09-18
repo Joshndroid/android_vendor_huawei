@@ -1,23 +1,11 @@
-# Copyright (C) 2016 DirtyUnivorns
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Auto-generated file, do not edit
 
 $(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
 
 # Prebuilt APKs/JARs from 'vendor/app'
 PRODUCT_PACKAGES += \
-    TimeService \
-    ims
+    ims \
+    TimeService
 
 # Prebuilt APKs libs symlinks from 'vendor/app'
 PRODUCT_PACKAGES += \
@@ -26,10 +14,10 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
-    HwMMITest \
-    Tycho \
     HwSarControlService \
-    SetupSmartDeviceOverlay
+    Tycho \
+    SetupSmartDeviceOverlay \
+    HwMMITest
 
 # Prebuilt APKs libs symlinks from 'proprietary/app'
 PRODUCT_PACKAGES += \
@@ -43,18 +31,19 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
+    HiddenMenu \
     HotwordEnrollment \
-    Entitlement \
-    DCMO \
-    SprintDM \
-    CNEService \
-    ConnMO \
     DMService \
-    CallStatistics \
+    DCMO \
+    Entitlement \
     DiagMon \
+    CNEService \
+    CallStatistics \
+    ConnMO \
     qcrilmsgtunnel \
     CarrierEntitlement \
-    HiddenMenu \
+    GCS \
+    SprintDM \
     ConfigUpdater
 
 # Prebuilt APKs libs symlinks from 'proprietary/priv-app'
@@ -62,10 +51,20 @@ PRODUCT_PACKAGES += \
     libdmengine_32.so \
     libdmjavaplugin_32.so
 
+# Standalone symbolic links
+PRODUCT_PACKAGES += \
+    lowi.conf
+
 # Prebuilt shared libraries from 'vendor'
 PRODUCT_PACKAGES += \
+    libqmi_cci \
     libqmi_common_so \
-    libqmi_csi \
     libdsi_netctrl \
-    libqmiservices \
-    libqmi_cci
+    libloc_api_v02 \
+    libqmi_csi \
+    libloc_ds_api \
+    libqmiservices
+
+# Extra modules from user configuration
+PRODUCT_PACKAGES += \
+    ETC_AOSPLinks
