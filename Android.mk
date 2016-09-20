@@ -222,7 +222,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmengine.so
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/system/lib/libdmengine.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app/DMService/lib/arm/libdmengine.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
@@ -239,7 +239,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmjavaplugin.so
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/system/lib/libdmjavaplugin.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app/DMService/lib/arm/libdmjavaplugin.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
