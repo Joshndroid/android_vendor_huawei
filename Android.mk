@@ -9,7 +9,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/ims/ims.apk
+LOCAL_SRC_FILES := proprietary/vendor/app/ims/ims.apk
 LOCAL_REQUIRED_MODULES :=  libimscamera_jni_64.so libimsmedia_jni_64.so
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
@@ -24,7 +24,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib64/libimscamera_jni.so
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/vendor/lib64/libimscamera_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app/ims/lib/arm64/libimscamera_jni.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
@@ -41,7 +41,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib64/libimsmedia_jni.so
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/vendor/lib64/libimsmedia_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app/ims/lib/arm64/libimsmedia_jni.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
@@ -58,7 +58,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_VENDOR)/app
-LOCAL_SRC_FILES := vendor/app/TimeService/TimeService.apk
+LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -71,7 +71,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
-LOCAL_SRC_FILES := proprietary/app/HwSarControlService/HwSarControlService.apk
+LOCAL_SRC_FILES := proprietary/system/app/HwSarControlService/HwSarControlService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -84,7 +84,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
-LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
+LOCAL_SRC_FILES := proprietary/system/app/Tycho/Tycho.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -97,7 +97,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
-LOCAL_SRC_FILES := proprietary/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
+LOCAL_SRC_FILES := proprietary/system/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -110,7 +110,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app
-LOCAL_SRC_FILES := proprietary/app/HwMMITest/HwMMITest.apk
+LOCAL_SRC_FILES := proprietary/system/app/HwMMITest/HwMMITest.apk
 LOCAL_REQUIRED_MODULES :=  libManufacture_64.so
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
@@ -125,7 +125,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /system/lib64/libManufacture.so
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/system/lib64/libManufacture.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/app/HwMMITest/lib/arm64/libManufacture.so
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
@@ -141,7 +141,7 @@ LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
-LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
+LOCAL_SRC_FILES := proprietary/system/framework/qcrilhook.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -153,7 +153,7 @@ LOCAL_MODULE := com.google.widevine.software.drm
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
-LOCAL_SRC_FILES := proprietary/framework/com.google.widevine.software.drm.jar
+LOCAL_SRC_FILES := proprietary/system/framework/com.google.widevine.software.drm.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -165,7 +165,7 @@ LOCAL_MODULE := com.google.android.camera.experimental2015
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/framework
-LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2015.jar
+LOCAL_SRC_FILES := proprietary/system/framework/com.google.android.camera.experimental2015.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -178,7 +178,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/HiddenMenu/HiddenMenu.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -192,7 +192,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/HotwordEnrollment/HotwordEnrollment.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -206,7 +206,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/DMService/DMService.apk
 LOCAL_REQUIRED_MODULES :=  libdmengine_32.so libdmjavaplugin_32.so
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
@@ -256,7 +256,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/DCMO/DCMO.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/DCMO/DCMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -270,7 +270,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/Entitlement/Entitlement.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/Entitlement/Entitlement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -284,7 +284,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/DiagMon/DiagMon.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -298,7 +298,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -312,7 +312,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/CallStatistics/CallStatistics.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/CallStatistics/CallStatistics.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -326,7 +326,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/ConnMO/ConnMO.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/ConnMO/ConnMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -340,7 +340,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -354,7 +354,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/CarrierEntitlement/CarrierEntitlement.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/CarrierEntitlement/CarrierEntitlement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -368,7 +368,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/GCS/GCS.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -382,7 +382,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/SprintDM/SprintDM.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/SprintDM/SprintDM.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -396,7 +396,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM)/priv-app
-LOCAL_SRC_FILES := proprietary/priv-app/ConfigUpdater/ConfigUpdater.apk
+LOCAL_SRC_FILES := proprietary/system/priv-app/ConfigUpdater/ConfigUpdater.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -410,7 +410,7 @@ LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/etc/lowi.conf
+$(LOCAL_BUILT_MODULE): TARGET := /proprietary/vendor/etc/lowi.conf
 $(LOCAL_BUILT_MODULE): SYMLINK := $(PRODUCT_OUT)/system/etc/lowi.conf
 $(LOCAL_BUILT_MODULE): $(LOCAL_PATH)/Android.mk
 $(LOCAL_BUILT_MODULE):
@@ -425,84 +425,84 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_cci
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libqmi_cci.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libqmi_cci.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libqmi_cci.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_cci.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_common_so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libqmi_common_so.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libqmi_common_so.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libqmi_common_so.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_common_so.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libdsi_netctrl
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libdsi_netctrl.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libdsi_netctrl.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libdsi_netctrl.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdsi_netctrl.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libloc_api_v02.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_api_v02.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libloc_api_v02.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libloc_api_v02.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_csi
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libqmi_csi.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libqmi_csi.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libqmi_csi.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_csi.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_ds_api
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libloc_ds_api.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_ds_api.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libloc_ds_api.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libloc_ds_api.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqmiservices
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := vendor/lib64/libqmiservices.so
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libqmiservices.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := vendor/lib/libqmiservices.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmiservices.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
