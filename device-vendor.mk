@@ -1,16 +1,4 @@
-# Copyright 2016 ParanoidAndroid Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# [2016-10-04] Auto-generated file, do not edit
 
 $(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
 
@@ -26,10 +14,10 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
+    HwMMITest \
     HwSarControlService \
-    Tycho \
     SetupSmartDeviceOverlay \
-    HwMMITest
+    Tycho
 
 # Prebuilt APKs libs symlinks from 'proprietary/app'
 PRODUCT_PACKAGES += \
@@ -37,26 +25,26 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
-    qcrilhook \
+    com.google.android.camera.experimental2015 \
     com.google.widevine.software.drm \
-    com.google.android.camera.experimental2015
+    qcrilhook
 
 # Prebuilt APKs/JARs from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
+    CallStatistics \
+    CarrierEntitlement \
+    CNEService \
+    ConfigUpdater \
+    ConnMO \
+    DCMO \
+    DiagMon \
+    DMService \
+    Entitlement \
+    GCS \
     HiddenMenu \
     HotwordEnrollment \
-    DMService \
-    DCMO \
-    Entitlement \
-    DiagMon \
-    CNEService \
-    CallStatistics \
-    ConnMO \
     qcrilmsgtunnel \
-    CarrierEntitlement \
-    GCS \
-    SprintDM \
-    ConfigUpdater
+    SprintDM
 
 # Prebuilt APKs libs symlinks from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
@@ -67,16 +55,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lowi.conf
 
-# Prebuilt shared libraries from 'vendor'
+# Prebuilt shared libraries
 PRODUCT_PACKAGES += \
-    libqmi_cci \
-    libqmi_common_so \
     libdsi_netctrl \
     libloc_api_v02 \
-    libqmi_csi \
     libloc_ds_api \
+    libqmi_cci \
+    libqmi_common_so \
+    libqmi_csi \
     libqmiservices
 
 # Extra modules from user configuration
 PRODUCT_PACKAGES += \
     ETC_AOSPLinks
+
